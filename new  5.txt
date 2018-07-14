@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FeeReceipt" pageWidth="1346" pageHeight="816" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="eead1489-887f-46ff-8900-335d3f72b075">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="134"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="particulars" whenResourceMissingType="Empty" uuid="1cd2408d-fa5f-4243-a96e-10e648c6342c"/>
+	<subDataset name="Table Dataset 1" uuid="8adfe10f-6c44-4ea8-a33c-30647d0dfb93"/>
+	<variable name="S.No" class="java.lang.String"/>
+	<title>
+		<band height="185">
+			<image>
+				<reportElement x="51" y="44" width="302" height="39" uuid="2104db2e-7096-4a15-aff7-c9deccb0b444"/>
+				<imageExpression><![CDATA["C:\\tools\\images\\pnb_logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="10" y="86" width="398" height="20" uuid="6d912f47-ff01-481f-8c84-be2739548524"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[173, Agaram Road, (BIHER) Selaiyur, Chennai - 600 073.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="124" width="398" height="20" uuid="de5c5e1d-49a2-476a-bb5e-dfe6387b2e1c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BHARATH INSTITUTE OF HIGHER EDUCATION & RESEARCH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="112" y="106" width="167" height="17" uuid="97bfd223-ea91-43f8-abf1-3bf0b5325796"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Ph: 22294005]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="112" y="144" width="167" height="19" uuid="2a486b1d-2065-4033-81d9-d5c55e452665"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[DEEMED UNIVERSITY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="0" width="398" height="23" uuid="91fb09c0-2783-48e4-ada4-650ab2269239"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Rounded MT Bold" size="16" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[USE "FCMBR" MENU OPTION ONLY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="24" width="24" height="20" uuid="c7871d70-de84-47d7-8851-2a14e59a910b"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Serif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No . ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="24" width="151" height="20" uuid="15b4a23d-ad5f-429c-b78a-4e652ab4ccfd"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Serif" size="14"/>
+				</textElement>
+				<text><![CDATA[FEE CHALLAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="22" y="165" width="398" height="20" uuid="4c1df497-2d70-42b8-93f1-e8eca5309057"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="13"/>
+				</textElement>
+				<text><![CDATA[Chennai - 73. Ph: 22290742 / 22293886 / 22290125]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="50">
+			<staticText>
+				<reportElement x="22" y="0" width="54" height="20" uuid="b0198189-6d55-4822-84f6-404b219d9a37"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Name :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="263" y="0" width="54" height="20" uuid="9f6f6d21-18aa-4a30-a728-ab616ee40188"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Year :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="22" y="30" width="54" height="20" uuid="01ff989e-cbf6-4384-a436-e53547da1014"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Regd. No. :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="263" y="30" width="54" height="20" uuid="91bf5231-2d39-4d75-8317-3385fd898232"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Branch :]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="50">
+			<staticText>
+				<reportElement x="22" y="0" width="147" height="20" uuid="e67c3752-deea-4df5-acc0-e5848b718953"/>
+				<textElement textAlignment="Center">
+					<font fontName="Cambria" size="14" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Institution ID:"BHUNI"]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="0" width="153" height="20" uuid="6a57f9c4-9175-415a-b1e7-54ea5286b5a1"/>
+				<textElement textAlignment="Center">
+					<font fontName="Cambria" size="14" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Collection Code:"GENEF"]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="72" y="22" width="231" height="26" uuid="c583a39c-7d66-427e-a80d-d35d850ebef4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="16"/>
+				</textElement>
+				<text><![CDATA[BY CASH / DEMAND DRAFT]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="51">
+			<componentElement>
+				<reportElement key="table" x="22" y="1" width="398" height="50" uuid="fddf60d0-256f-4545-ac0c-5cf88573817c"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="particulars" uuid="81b1d8d9-48fc-4e35-bc0d-5112e644bc20">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource(1)]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="35" uuid="0885da77-0ba1-4953-a688-51cea1fa4af6">
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="35" height="30" uuid="2fb77b42-1e5d-4665-bcba-4888dad11187"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Calibri" size="14"/>
+								</textElement>
+								<text><![CDATA[S.No.]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell height="208" rowSpan="1">
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="35" height="26" uuid="c1424589-3e9d-4a69-a7c0-b5baa548f0b8"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[1]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="26" width="35" height="26" uuid="59fea9af-1649-4823-a9ae-56a2ac2df754"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[2]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="52" width="35" height="26" uuid="819ff6f9-8b9d-41c9-a1c6-8d380124d92c"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[3]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="78" width="35" height="26" uuid="cef646d1-aac3-438c-b024-f24d50d2f431"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[4]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="104" width="35" height="26" uuid="eda4a894-2256-4e59-88ef-6c3fa7121550"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[5]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="130" width="35" height="26" uuid="a7bc7ee9-1299-4171-ae92-ba0bf4b96df0"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[6]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="156" width="35" height="26" uuid="5ce3af7d-8b63-4184-993c-d7cb3d9e9b4d"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[7]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="182" width="35" height="26" uuid="3472d1ab-8207-4020-bfd4-9c5ff8e7730b"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[8]]></text>
+							</staticText>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="231" uuid="56fc4e20-642e-477a-b071-c2fd616fbe6d">
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="231" height="30" uuid="8b79a160-eee0-47db-89cc-0808dc4b0eee"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Calibri" size="14"/>
+								</textElement>
+								<text><![CDATA[PARTICULARS]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter height="30" rowSpan="1">
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="231" height="30" uuid="8d65f986-2771-4ce7-b192-df3b0bf1ef27"/>
+								<textElement textAlignment="Right" verticalAlignment="Middle"/>
+								<text><![CDATA[TOTAL  ]]></text>
+							</staticText>
+						</jr:columnFooter>
+						<jr:detailCell height="208" rowSpan="1">
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="231" height="26" uuid="093e5b9c-0df6-4077-b05d-1849d81d0e3c"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[  TUITION FEE]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="26" width="231" height="26" uuid="b167a851-6387-40f2-b5a4-f8bdca7632c4"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[  DEVELOPMENT FEE]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="52" width="231" height="26" uuid="c7e57fa2-2ae9-4cd6-90f3-784b6d783745"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[  ADMISSION / READMISSION FEE]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="78" width="231" height="26" uuid="36431896-79dc-47cc-94ed-97ecb4269b0b"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[  REGISTRATION FEE]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="104" width="231" height="26" uuid="6fc304d2-7863-40e6-aea1-d712c0caad9e"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[  LIBRARY & SPORTS FEE]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="130" width="231" height="26" uuid="3665e138-4352-4f97-b1ea-43324217dd7d"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[  LABORATORY & WORKSHOP FEE]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="156" width="231" height="26" uuid="8d4bae9b-6690-4f2d-9369-49f9d90c43b8"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[  FINE FEE]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="182" width="231" height="26" uuid="4639272c-fe80-4cf9-a479-0503f80de424"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[  OTHERS]]></text>
+							</staticText>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="67" uuid="8466d454-292e-43a8-ad7e-d83b0468ac77">
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="67" height="30" uuid="de71de4e-ce44-4016-91ce-2ea294c5c77a"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Calibri" size="14"/>
+								</textElement>
+								<text><![CDATA[RS]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter height="30" rowSpan="1"/>
+						<jr:detailCell height="208" rowSpan="1">
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="67" height="26" uuid="4ed012e4-47ca-40a2-97e8-089f731a8107"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle"/>
+								<text><![CDATA[]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="26" width="67" height="26" uuid="89eff4fe-a621-4484-9d99-b83594ee1d84"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle"/>
+								<text><![CDATA[]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="52" width="67" height="26" uuid="9fdb1fc7-b80a-49fe-a906-57fab263b604"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle"/>
+								<text><![CDATA[]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="78" width="67" height="26" uuid="e5a595a1-77eb-4bf3-a9cc-e91c3eff58c1"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle"/>
+								<text><![CDATA[]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="104" width="67" height="26" uuid="ff409574-6c50-4b0e-b9e3-674f6aadb1cf"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle"/>
+								<text><![CDATA[]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="130" width="67" height="26" uuid="dd3a20df-7ffb-44fd-bf97-ecee92044c54"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle"/>
+								<text><![CDATA[]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="156" width="67" height="26" uuid="6bd284fd-eae5-47e8-86de-f48d31a50024"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle"/>
+								<text><![CDATA[]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="182" width="67" height="26" uuid="9ca9c8e9-5063-4d1b-98bf-1ff72d700dd3"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle"/>
+								<text><![CDATA[]]></text>
+							</staticText>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="39" uuid="eb5b7046-3102-4a6c-8fec-a183005e5ed6">
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="38" height="30" uuid="29d36ebe-c425-445e-a1e9-9a05d133cfc1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Calibri" size="14"/>
+								</textElement>
+								<text><![CDATA[Ps]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter height="30" rowSpan="1"/>
+						<jr:detailCell height="208" rowSpan="1">
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="0" width="38" height="26" uuid="f9cfb4de-473b-4d09-8685-68044b3d4e40"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle"/>
+								<text><![CDATA[]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="26" width="38" height="26" uuid="746173d2-4dd2-4715-b97e-df1c08bbf8a7"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle"/>
+								<text><![CDATA[]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="52" width="38" height="26" uuid="d629d0c7-6bfb-453c-98b9-d30a3e61f055"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle"/>
+								<text><![CDATA[]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="78" width="38" height="26" uuid="04dd4fef-7a70-4efc-b919-760397c46619"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle"/>
+								<text><![CDATA[]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="104" width="38" height="26" uuid="4f6c369e-7b0b-468d-9799-59e90d128387"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle"/>
+								<text><![CDATA[]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="130" width="38" height="26" uuid="ddb365ac-5216-4451-82c7-084527894ea5"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle"/>
+								<text><![CDATA[]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="156" width="38" height="26" uuid="66adc853-5654-4e4a-b02c-ff1cd9d01507"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle"/>
+								<text><![CDATA[]]></text>
+							</staticText>
+							<staticText>
+								<reportElement mode="Transparent" x="0" y="182" width="38" height="26" uuid="ff7e63b0-8bec-480b-a359-188d8a34e9ab"/>
+								<textElement textAlignment="Justified" verticalAlignment="Middle"/>
+								<text><![CDATA[]]></text>
+							</staticText>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="66">
+			<componentElement>
+				<reportElement key="table" style="table" x="22" y="0" width="398" height="66" uuid="0d0940be-5b22-4b2a-bb4c-34ad79da6eea"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Table Dataset 1" uuid="18572788-2149-4c65-b493-5f53d4f8220c">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource(1)]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="90" uuid="dd731481-acd7-4be6-939c-1f9da14ad2fb">
+						<jr:columnHeader style="table_CH" height="30"/>
+						<jr:columnFooter style="table_CH" height="30"/>
+						<jr:detailCell style="table_TD" height="20"/>
+					</jr:column>
+					<jr:column width="90" uuid="d9feaec2-6044-481a-9efa-40fd270ae815">
+						<jr:columnHeader style="table_CH" height="30"/>
+						<jr:columnFooter style="table_CH" height="30"/>
+						<jr:detailCell style="table_TD" height="20"/>
+					</jr:column>
+					<jr:column width="90" uuid="d7a8ab9a-3879-4aaa-9099-445d28e3548c">
+						<jr:columnHeader style="table_CH" height="30"/>
+						<jr:columnFooter style="table_CH" height="30"/>
+						<jr:detailCell style="table_TD" height="20"/>
+					</jr:column>
+					<jr:column width="90" uuid="2760d97c-9a36-42ad-8a79-8d25d95d84e7">
+						<jr:columnHeader style="table_CH" height="30"/>
+						<jr:columnFooter style="table_CH" height="30"/>
+						<jr:detailCell style="table_TD" height="20"/>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="50"/>
+	</summary>
+</jasperReport>

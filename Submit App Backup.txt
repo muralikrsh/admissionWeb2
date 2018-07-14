@@ -1,0 +1,49 @@
+		function getDate(val) {
+			i=0;
+			var arr=val.value.split("-");
+			var months= ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+			for(i=0; i<months.length; i++) {
+				if(months[i]==arr[1]) {
+					break;
+				}
+			}
+			if(i<9) 
+				mon= "0"+(i+1);
+			else
+				mon= (i+1)+"";
+
+			return mon+"/"+arr[0]+"/"+arr[2];
+		}	
+		
+		function submitApp() {
+
+				
+			var sel_course=document.getElementById("course").value;
+
+			if(sel_course.trim()=="B.Tech") {
+				var ch1=document.getElementById("choice_1").value
+				var ch2=document.getElementById("choice_2").value
+				var ch3=document.getElementById("choice_3").value
+				if(ch1==ch2 || ch2==ch3 || ch1==ch3) {
+					alert("Choices 1, 2 and 3 have to be different");
+					return;
+				}
+			} 
+
+			
+
+			if( $("#formPersonal").valid() ) {
+				var dt=new Date(getDate(document.formPersonal.dob));
+				var today=new Date();
+				if(dt.getTime() > today.getTime()) {
+					alert("Date of Birth cannot be in the future");
+					return;
+				} 
+				var age_years=((today.getTime() - dt.getTime()) / ( 365 * 24 * 3600 * 1000));
+				if(age_years < 16)
+					alert("Minimu Age for application is 16");
+					return;
+				}			
+				postRequest("SubmitApplicationResult.jsp","N");
+			}
+		}

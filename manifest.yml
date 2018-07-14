@@ -1,0 +1,6 @@
+---
+applications:
+- name: admissionWeb2
+  memory: 768M
+  instances: 1
+  random-route: true

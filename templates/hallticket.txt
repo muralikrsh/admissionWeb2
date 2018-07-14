@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>Hall Ticket</title>
+<style>
+.head{
+    margin:2px 0px;
+	color:#fff;
+    background-color:#000066;
+    padding:3px;
+	font-weight:bold;
+    font-size:14px;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+}
+
+.center {
+    border-radius: 15px;
+	margin: auto;
+    width: 90%;
+    border: 2px solid #000066;
+    padding: 10px;
+}
+table {
+    border-collapse: collapse;
+}
+.line{
+    border-radius: 5px;
+	border: 1px solid black;
+}
+</style>
+</head>
+<body width=900>
+<div class="center">
+<table cols=5 width=90%>
+<tr>
+	<td align=center>
+		<table>
+		<tr>
+			<td align=center><img src="hell_ticket_front.GIF" width="600" height="70" border="0" alt=""></td>
+		</tr>
+		<tr>
+			<td align=center><b>BHARATH ENGINEERING ENTRANCE EXAMINATION - 2016</b></td>
+		</tr>
+		</table>
+	</td>	
+	<td align=center>
+		<table>
+		<tr class=line>
+			<td>Hall Ticket No</td>
+		</tr>
+		<tr class=line>
+			<td align=center><b>$$HT_NO</b></td>
+		</tr>
+		</table>
+		</td>
+</tr>
+</table>
+
+<table cols=5 width=90%>
+<tr>
+	<td align=center><u><b>HALL TICKET </b></u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+</tr>
+</table>
+<table cols=5 width=90%>
+<tr>
+	<td colspan=4 class=head align=center>Details of Examination</td>
+	<td rowspan=2 class=head align=center>Application Number</td>
+</tr>
+<tr>
+	<td class=head align=center>COURSE</td>
+	<td class=head align=center>DATE</td>
+	<td class=head align=center>DAY</td>
+	<td class=head align=center>TIME</td>
+</tr>
+<tr>
+	<td class="line" align=center><b>$$COURSE</b></td>
+	<td class="line" align=center><b>23-Apr-2016</b></td>
+	<td class="line" align=center><b>Saturday</b></td>
+	<td class="line" align=center><b>10.00 AM</b></td>
+	<td class="line" align=center><b>$$APPN_NO</b></td>
+</tr>
+</table>
+<table cols=5 width=90%>
+<tr>
+	<td rowspan=4 align=left>
+	<table>
+		<tr>
+			<td class=head align=center colspan=2 border=1>Details of Examination Centre</td>
+		</tr>
+		<tr class="line">
+			<td rowspan=4 width=60%>$$EXAM_VENUE</td>
+		</tr>
+	</table>
+	</td>
+	<td align=right>
+	<table>
+		<tr>
+		<td rowspan=4 width=40% align=right><img src="photos/" width="150" height="200" border="0" alt="">
+		</td>
+		</tr>
+	</table>
+	</td>
+</tr>
+</table>
+<br><br>
+<table cols=5 width=90% >
+<tr>
+	<td><b>Name of the Candidate</b></td>
+	<td>$$CANDIDATE_NAME</td>
+	<td rowspan=2 colspan=3 width=40%>
+	<table>
+			<tr class="line" >
+				<td><b>Mobile Number</b></td>
+			</tr>
+			<tr class="line" >
+				<td>$$MOBILE_NO</td>
+			</tr>
+	</table>	
+	</td>
+</tr>
+<tr>
+	<td><b>Father / Guardian Name</b></td>
+	<td>$$PARENT_NAME</td>
+</tr>
+
+</table>
+<br><br>
+<table cols=5 width=90%>
+<tr>
+	<td class="line" align=left>
+	<table cols=3>
+	<tr>
+	<td align=left>
+	<b>Address</b> : <br><br>
+	$$ADDRESS<br>
+	$$CITY - $$PINCODE<br>
+	$$STATE<br>
+	</td>
+	</tr>
+	</table>
+	</td>
+	<td align=right>
+	<table>
+		<tr>
+			<td align=center height=45px class="line"></td>
+		</tr>
+		<tr>
+			<td align=center><b>Signature of the Candidate</b></td>
+		</tr>
+		<tr>
+			<td align=center height=45px class="line"><img src="chief.gif" width="150" height=45px alt=""></td>
+		</tr>
+		<tr>
+			<td align=center><b>Signature of the Chief Superintendent</b></td>
+		</tr>
+	</table>
+	</td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<br>
+<div>
+<table width=90%>
+	<tr>
+		<td align=center><img src="hall_ticket_back.gif" width=75% alt=""></td>
+	</tr>
+<div>
+</div>
+</body>
+</html>

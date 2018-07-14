@@ -1,0 +1,2 @@
+http://www.bulksmsapps.com/apisms.aspx?
+user=BharathUniversity&password=P2IRV3&genkey=059631998&sender=BHUNIV&number= " +paramString1+ " &message=" + URLEncoder.encode(paramString2) +";

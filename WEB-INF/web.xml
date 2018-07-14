@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="true"> 
+<filter>
+    <filter-name>LogFilter</filter-name>
+    <filter-class>campus.LogFilter</filter-class>
+</filter>
+<filter-mapping>
+    <filter-name>LogFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>
+
+ <servlet>
+    <servlet-name>DownloadExcel</servlet-name>
+    <servlet-class>campus.DownloadExcel</servlet-class>
+ </servlet>
+   <servlet-mapping>
+    <servlet-name>DownloadExcel</servlet-name>
+    <url-pattern>/servlet/DownloadExcel</url-pattern>
+  </servlet-mapping>
+ <servlet>
+    <servlet-name>ServletInitializer</servlet-name>
+    <servlet-class>campus.ServletInitializer</servlet-class>
+    <load-on-startup>1</load-on-startup>
+ </servlet>
+ <servlet>
+    <servlet-name>DownloadFile</servlet-name>
+    <servlet-class>campus.DownloadFile</servlet-class>
+ </servlet>
+    <servlet-mapping>
+    <servlet-name>DownloadFile</servlet-name>
+    <url-pattern>/DownloadFile</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AllotmentListExcel</servlet-name>
+    <servlet-class>campus.AllotmentListExcel</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>AllotmentListExcel</servlet-name>
+    <url-pattern>/servlet/AllotmentListExcel</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+    <servlet-name>DownloadAdmExcel</servlet-name>
+    <servlet-class>campus.DownloadAdmExcel</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>DownloadAdmExcel</servlet-name>
+    <url-pattern>/servlet/DownloadAdmExcel</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  <servlet-name>UploadFile</servlet-name>
+  <servlet-class>campus.UploadFile</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+  <servlet-name>UploadFile</servlet-name>
+  <url-pattern>/UploadFile</url-pattern>
+ </servlet-mapping>
+  
+ <servlet>
+    <servlet-name>Receipt</servlet-name>
+    <servlet-class>campus.PrintReceipt</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>Receipt</servlet-name>
+    <url-pattern>/servlet/PrintReceipt</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+    <servlet-name>RegistrationListExcel</servlet-name>
+    <servlet-class>campus.RegistrationListExcel</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>RegistrationListExcel</servlet-name>
+    <url-pattern>/servlet/RegistrationListExcel</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ManualApplicationExcel</servlet-name>
+    <servlet-class>campus.ManualApplicationExcel</servlet-class>
+ </servlet>
+ <servlet-mapping>
+    <servlet-name>ManualApplicationExcel</servlet-name>
+    <url-pattern>/servlet/ManualApplicationExcel</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>  
+        <welcome-file>Login.jsp</welcome-file>  
+    </welcome-file-list>
+</web-app>

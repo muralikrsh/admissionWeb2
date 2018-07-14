@@ -1,0 +1,28 @@
+#newsticker-demo { 
+width:200px; 
+height:400px; 
+background:#FFFFCC; 
+padding:5px 5px 0; 
+font-family:Trebuchet MS,Verdana,Arial,Sans-Serif;
+font-size:12px;
+margin:10px auto;
+}
+
+#newsticker-demo a { text-decoration:none; }
+#newsticker-demo img { border: 2px solid #FFFFFF; }
+
+#newsticker-demo .title {
+text-align:center;
+font-size:14px;
+font-weight:bold;
+padding:5px;
+}
+
+.newsticker-jcarousellite { width:200px; }
+.newsticker-jcarousellite ul { width: 200px; list-style:none; display:block; padding-bottom:1px; margin-bottom:5px; }
+.newsticker-jcarousellite li{ list-style:circle; display:block; padding-bottom:1px; margin-bottom:2px; }
+.newsticker-jcarousellite .thumbnail { float:left; width:110px; }
+.newsticker-jcarousellite .info { float:center; width:200px; }
+.newsticker-jcarousellite .info span.cat { display: block; font-size:12px; color:#000000; }
+
+.clear { clear: both; }
